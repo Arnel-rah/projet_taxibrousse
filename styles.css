@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #007BFF;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+  background-color: #007BFF;
+  color: #fff;
+}
+
+
+/* ------------------payement style start------------- */
+p{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.operator-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.operator-selection label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.operator-selection input[type="radio"] {
+    display: none;
+}
+.operator-selection img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.operator-selection input[type="radio"]:checked + img {
+    transform: scale(1.1);
+    border: 1px solid #0056b3;
+    border-radius: 10px;
+}
+/* ------------------payement style end -----------------*/

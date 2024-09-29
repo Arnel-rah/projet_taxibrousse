@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation TaxiBrousse Madagascar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Réservez votre billet de TaxiBrousse</h1>
+    </header>
+    <main>
+        <section>
+            <form id="reservation-form" action="reservation.php" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="departure">Ville de départ :</label>
+                <input type="text" id="departure" name="departure" required>
+
+                <label for="arrival">Ville d'arrivée :</label>
+                <input type="text" id="arrival" name="arrival" required>
+
+                <label for="date">Date de départ :</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
