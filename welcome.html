@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à la Coopérative Madagascar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+
+.welcome-container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+.welcome-text {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 10px;
+    animation: fadeInText 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <div class="logo">
+            <img src="logo-removebg-preview.png" alt="Logo de la Coopérative Madagascar">
+        </div>
+        <h1 class="welcome-text">Bienvenue à la Coopérative Madagascar</h1>
+    </div>
+
+    <script>
+        // Attendre 5 secondes (5000ms) avant de rediriger vers index.html
+setTimeout(function() {
+    window.location.href = "bienvenue.html";
+}, 4000);
+
+    </script>
+</body>
+</html>
